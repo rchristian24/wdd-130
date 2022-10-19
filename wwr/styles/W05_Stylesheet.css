@@ -1,0 +1,36 @@
+body {
+    background-color: #3e3e3e;
+}
+main{
+    background-color: #3e3e3e;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+nav{
+    display: flex;
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer{
+    display: inline;
+    width: 40%;
+    margin: 0, auto;
+}
+img{
+    width: 80%;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,66 @@
+body {
+    background-color: #3e3e3e;
+}
+main{
+    background-color: #3e3e3e;
+    max-width: 1600px;
+    width: 400%; 
+    padding: 0;
+    margin: 0 auto;
+}
+
+.circle{
+    display: flex;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    
+    border:0
+}
+
+nav{
+   display:flex;
+
+   
+    
+    
+    padding: 20px;
+}
+
+footer{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    margin: 0, auto;
+    padding: 50px
+   
+
+}
+nav{
+  display:flex;  
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.man{
+    width: 200px;
+    border-radius: 50%;
+    padding:100px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.desk{
+    width: 200px; 
+    border-radius: 50%;
+    padding: 100px;
+    text-align: center;
+    margin: 0 auto
+}
+.graphic{
+    width: 200px; 
+    border-radius: 50%;
+    padding: 100px;
+    text-align: center;
+    margin: 0 auto;
+}

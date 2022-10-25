@@ -79,6 +79,7 @@ nav a:hover{
     background-color: beige;
     color: black
 }
+
 .book, .join{
     background-color: #87955f;
     color: white;
@@ -87,6 +88,9 @@ nav a:hover{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+}
+.join{
+    background-color: #364d59;
 }
 .book:hover, .join:hover{
     background-color: beige;

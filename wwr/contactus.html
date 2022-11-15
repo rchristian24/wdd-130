@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/styles.css">
+
     <style>
         form {
             /* Center the form on the page */
@@ -85,45 +86,50 @@
             margin-top: 3em;
         }
     </style>
+
 </head>
+
 <body>
-    <div id="content">
-        <header>
-            <a id = "logo_link" href = "index.html">
-                <img class = "logo" src = "images/logo.jpg" alt = "Rachel's Rafting Logo">
-            </a>
-            <nav>
-                <a href = "index.html" >Home</a>
-                <a href = "#">FAQ</a>
-                <a href = "site-plan-rafting.html">Site Plan</a>
-                <a href = "contactus.html">Contact Us</a>
-            </nav>
-        </header>
-        <div id = "title">
-            <h6>Contact Us</h6>
-           
-        </div>
-    <div id="feedback">
+   
+    <header>
+        <a id = "logo_link" href = "index.html">
+            <img class = "logo" src = "images/logo.jpg" alt = "Rachel's Rafting Logo">
+        </a>
+        <nav>
+            <a href = "index.html" >Home</a>
+            <a href = "#">FAQ</a>
+            <a href = "site-plan-rafting.html">Site Plan</a>
+            <a href = "contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div id = "title">
+        <h6>Contact Us</h6>     
+    </div>
+
+    <div id="feedback"> </div> 
+
     <form action = "/my-handling-form-page" method = "post">
         <ul>
             <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" />
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
             </li>
             <li>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" name="user_email" />
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
             </li>
             <li>
-              <label for="msg">Message:</label>
-              <textarea id="msg" name="user_message"></textarea>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
             </li>
             <li class="button">
                 <button type="submit">Send your message</button>
             </li>
-          </ul>
-    </div>   
+        </ul>  
     </form>
+   
+
     <footer>
         <p>Rachel's Rafting &copy; 2022 - Rachel Christian</p>
         <p><a href = "site-plan-rafting.html">Site Plan</a> </p>
@@ -140,7 +146,7 @@
             </a>
         </div>
     </footer> 
-    </div>
+
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
@@ -158,5 +164,7 @@
             document.body.classList.toggle('moveDown');
         });
     </script>
+
 </body>
+
 </html>

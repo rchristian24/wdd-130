@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppies Parchments | About Us</title>
+</head>
+<body>
+
+<header>
+    <a id = "logo_link" href = "index.html">
+        <img class = "logo" src = "images/logo.png" alt = "Poppies Parchments Logo">
+    </a>
+    <nav>
+        <a href = "index.html" >Home</a>
+        <a href = "classes.html">Classes</a>
+        <a href = "aboutus.html">About Us</a>
+    </nav>
+</header> 
+
+<div id = "hero"> 
+    <div id = "hero-box">
+        <img id = "hero-img" src = "images/rsz_pexels_poppy.jpg" alt = "Poppy in field"> 
+    </div>
+    <section id = "hero-msg">
+        <h1 class = "home-title">Poppies Parchments</h1>
+    </section>
+</div>
+
+<main>
+
+<h1>Hi! I'm Poppy!</h1>
+
+<section class = "about">
+    <p>Hi! I’m Poppy. Ever since I was a little girl I have loved to design and get creative! (Which wasn’t always good for Mom’s walls!)</p>
+    <p>As I got older, I was able to channel that creativity into going to the Art Institute of Chicago where I continued to learn how to expand my creative horizons even more (way past Mom’s walls!).</p>
+    <p>While there I met an old gypsy woman at a fair. She looked straight into my eyes and told me that I was going to be bit by a wolf and become a werewolf. That’s when I realized life is short and I should do what I love.</p>
+    <p>And I love making cards and making people happy! So, I left Chicago and came home to Smalltown and opened Poppies Parchments. It was rough sailing at first.</p>
+    <p>Mailing cards is becoming a thing of the past. But just as a hurricane starts with one raindrop, so too, did it all start with one card. The mayor’s card. </p>
+    <p>When Sylvia Smith was elected mayor, I sent her a congratulatory card (one of many in Poppies Parchments). When Madame Mayor received my card, she was so taken with how it looked, she came and found my store and bought a card to send to a friend.</p>
+    <p>That friend was so taken with Madame Mayor’s card that she found Poppies Parchments and bought a card to send to another friend. And on and on it went. </p>
+    <p> I am still here because of YOU! Thank you Smalltown!</p>
+    <p>P.S. I was only kidding about turning into a werewolf.</p>
+    <p> Feel free to contact me by Facebook, Twitter, Instagram, or send me a message through the form below. I would love to hear from you!</p>
+</section>
+
+<div id = "me">
+    <img src = "images/rsz_halloween.jpg" alt = "picture of me" >
+</div>
+
+<div id="feedback"> </div> 
+
+<form action = "/my-handling-form-page" method = "post">
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+            <button type="submit">Send your message</button>
+        </li>
+    </ul>  
+</form>
+
+
+
+</main>
+
+<footer>
+    <p>Poppies Parchments &copy; 2022 - Poppy Anybody</p>
+    <p><a href = "site-plan.html">Site Plan</a> </p>
+    
+    <div class = "social">
+        <a href = "https://facebook.com" target = "_blank">
+            <img src = "images/facebook.png" alt = "fb icon">
+        </a>
+        <a href = "https://twitter.com" target = "_blank"> 
+            <img src =  "images/twitter.png" alt = "twitter icon">            
+        </a>
+        <a href = "https://instagram.com" target = "_blank"> 
+            <img src = "images/instagram.png" alt = "instagram icon">
+        </a>
+    </div>
+</footer>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+
+</html>

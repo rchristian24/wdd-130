@@ -5,6 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poppies Parchments | Classes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_5696 (3).jpg");
+  height: 100%;  
+  width:100%;
+  margin: 0 auto;
+  margin-bottom:-390px;  
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_you {
+  /* The image used */
+  background-image: url("images/IMG_5705 (2).jpg");
+  
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    .friends {
+  /* The image used */
+  background-image: url("images/pexels_friends (2).jpg");
+  
+  width:100%;
+  margin: 0 auto;
+  
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    .flower {
+  /* The image used */
+  background-image: url("images/cutout_card (3).JPG");
+  height: 100%;  
+  width:100%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+</style>  
 </head>
 <body>
 
@@ -21,62 +89,60 @@
 
 <div id = "hero"> 
     <div id = "hero-box">
-        <img id = "hero-img" src = "images/rsz_pexels_poppy.jpg" alt = "Poppy in field"> 
+        <img id = "hero-img" src = "images/pexels_poppy(2).jpg" alt = "Poppy in field"> 
     </div>
     <section id = "hero-msg">
         <h1 class = "home-title">Poppies Parchments</h1>
     </section>
 </div>
 
-<main>
+<main id = "class_grid">
 
-<section class = "parallax">
-    <img class = "rose" src = "images/IMG_5696 (2).jpg" alt = "rose with script">
-    <div id = "top">
-        <button>
-            <h1>Classes</h1>
-        </button>
-    </div>
+<div class = "parallax"></div>
 
-    <div id = "middle">
-        <h2> Classes being held now:</h2>
-        <p>How to glaze. (Make that card shine!)</p>
-        <p>How to emboss. (We all love 3-D!)</p>
-        <p>How to make a Domino necklace. (Yes, I said domino.) </p>
-        <p>How to make 3-D cutouts. (Did I mention we all love 3-D?)></p>
-        <p>How to make your own rubber stamps. (Warning! This class is for the diehard stampers (but all are welcome!))</p>
-        <p>How to make a lavender aroma filled satchel. (Great for those sock drawers or under pillows!)</p>
-        <p>Basic Card Making. (For those novices out there, ready to dip their toe in.)</p>
-        <p>Holiday Wreath. (Small wreath, easy to make and I promise – you’ve never seen one like this before!)</p>
-    </div>   
+<div id = "classes">
+<h1>Classes</h1>
+        
+</div>
 
-    <img class = "about_you" src = "images/IMG_5705 (2).jpg" alt = "all about you">
-    <div id = "phrase">
-        <h2>Creativity Awaits!</h2>
-    </div>
+<div id = "middle">
+    <h2> Classes being held now:</h2>
+    <p>How to glaze. (Make that card shine!)</p>
+    <p>How to emboss. (We all love 3-D!)</p>
+    <p>How to make a Domino necklace. (Yes, I said domino.) </p>
+    <p>How to make 3-D cutouts. (Did I mention we all love 3-D?)</p>
+    <p>How to make your own rubber stamps. (Warning! This class is for the diehard stampers (but all are welcome!))</p>
+    <p>How to make a lavender aroma filled satchel. (Great for those sock drawers or under pillows!)</p>
+    <p>Basic Card Making. (For those novices out there, ready to dip their toe in.)</p>
+    <p>Holiday Wreath. (Small wreath, easy to make and I promise – you’ve never seen one like this before!)</p>
+</div>   
 
-    <div id = "times">
-        <h3>Classes are held on Tuesday evenings at 7:00pm and Saturdays at 9:00am.</h3>
-    </div>
+<div class = "about_you"></div>
 
-    <img class = "friends" src = "images/rsz_1rsz_pexels_friends.jpg" alt = "creative friends">
-    <div id = "second-phrase">
-        <h2>You Got This!</h2>
-    </div>
+<div id = "creativity">
+<h2>Creativity Awaits!</h2>
+</div>
 
-    <div id = "price">
-        <h3>All materials free! First class is always free! Subsequent classes are only $8.00 a class!</h3>
-    </div>
+<div id = "times">
+    <h5><br>Classes are held on Tuesday evenings at 7:00pm and Saturdays at 9:00am.</h5>
+</div>
 
-    <img class = "flower" src = "images/cutout_card (2).JPG" alt = "stencil flower">
-    <div id = "bottom">
-        <button>
-            <h3>Sign Up Today!</h3>
-        </button>
+<div class = "friends"></div>
 
-    </div>
 
-</section>
+<div id = "this">
+<h2>You Got This!</h2>
+</div>
+
+<div id = "price">
+    <h5><br>All materials free! First class is always free! Subsequent classes are only $8.00 a class!</h5>
+</div>
+
+<div class= "flower"></div>
+
+<div id = "sign">
+<h5>Sign Up Today!</h5>   
+</div>
 
 </main>
 

@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2c6e49;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay is the Simple Component I chose to do</h2>
+<p>Hover over the image to see words by William Wordsworth.</p>
+
+<div class="container">
+  <img src="images/IMG_4718.JPG" alt="daffodil" class="image">
+  <div class="overlay">
+    <div class="text">I wandered lonely as a cloud <br> 
+        That floats on high o'er vales and hills, <br>
+        When all at once I saw a crowd, <br>
+        A host, of golden daffodils;<br>
+        Beside the lake, beneath the trees, <br>
+        Fluttering and dancing in the breeze.</div>
+  </div>
+</div>
+
+</body>
+</html>
